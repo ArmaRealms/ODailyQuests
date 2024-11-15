@@ -36,7 +36,7 @@ public class BlockBreakListener extends PlayerProgressor implements Listener {
         }
 
         if (!block.getType().isItem()) {
-            Debugger.addDebug("BlockBreakListener: O tipo do bloco " + block.getType() + " não é um item válido. Evento cancelado.");
+            Debugger.addDebug("BlockBreakListener: onBlockBreakEvent cancelled due to non-item block.");
             return;
         }
 
